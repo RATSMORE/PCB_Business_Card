@@ -25,108 +25,108 @@ LOAD C:/msys64/ucrt64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-e
 LOAD C:/msys64/ucrt64/bin/../lib/gcc/arm-none-eabi/13.3.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a
 END GROUP
 
-.text           0x08000000      0x304
+.text           0x08000000      0x33c
  *(.isr_vector)
- .isr_vector    0x08000000      0x134 startup.o
+ .isr_vector    0x08000000      0x188 startup.o
                 0x08000000                vector_table
  *(.text)
- .text          0x08000134      0x13c main.o
-                0x08000134                main
-                0x08000168                configure_LED_pin
-                0x080001a0                configure_button_pin
-                0x080001e8                configure_button_interrupt
-                0x0800023c                EXTI15_10_Handler
- .text          0x08000270       0x94 startup.o
-                0x08000270                Reset_Handler
-                0x080002fc                SVCall_Handler
-                0x080002fc                DMA2_Stream7_Handler
-                0x080002fc                Systick_Handler
-                0x080002fc                HardFault_Handler
-                0x080002fc                DMA2_Stream3_Handler
-                0x080002fc                PendSv_Handler
-                0x080002fc                NMI_Handler
-                0x080002fc                ADC_Handler
-                0x080002fc                EXTI17_RTC_Alarm_Handler
-                0x080002fc                I2C1_EV_Handler
-                0x080002fc                I2C3_ER_Handler
-                0x080002fc                WWDG_Handler
-                0x080002fc                EXTI4_Handler
-                0x080002fc                I2C3_EV_Handler
-                0x080002fc                DMA1_Stream1_Handler
-                0x080002fc                DMA2_Stream4_Handler
-                0x080002fc                DMA1_Stream7_Handler
-                0x080002fc                OTG_FS_Handler
-                0x080002fc                TIM1_BRK_TIM9_Handler
-                0x080002fc                I2C1_ER_Handler
-                0x080002fc                DMA1_Stream3_Handler
-                0x080002fc                UsageFault_Handler
-                0x080002fc                TIM1_UP_TIM10_Handler
-                0x080002fc                TIM1_CC_Handler
-                0x080002fc                I2C2_ER_Handler
-                0x080002fc                USART6_Handler
-                0x080002fc                DMA1_Stream0_Handler
-                0x080002fc                EXTI22_RTC_WAKEUP_Handler
-                0x080002fc                EXTI1_Handler
-                0x080002fc                FLASH_Handler
-                0x080002fc                EXTI3_Handler
-                0x080002fc                EXTI2_Handler
-                0x080002fc                EXTI9_5_Handler
-                0x080002fc                TIM2_Handler
-                0x080002fc                USART1_Handler
-                0x080002fc                EXTI18_OTG_FS_WKUP_Handler
-                0x080002fc                TIM3_Handler
-                0x080002fc                DMA2_Stream6_Handler
-                0x080002fc                Default_Handler
-                0x080002fc                TIM1_TRG_COM_TIM11_Handler
-                0x080002fc                EXTI21_TAMP_STAMP_Handler
-                0x080002fc                TIM4_Handler
-                0x080002fc                SPI2_Handler
-                0x080002fc                DMA2_Stream1_Handler
-                0x080002fc                DMA1_Stream2_Handler
-                0x080002fc                MemManage_Handler
-                0x080002fc                EXTI0_Handler
-                0x080002fc                DMA2_Stream5_Handler
-                0x080002fc                DMA1_Stream6_Handler
-                0x080002fc                SDIO_Handler
-                0x080002fc                USART2_Handler
-                0x080002fc                SPI1_Handler
-                0x080002fc                I2C2_EV_Handler
-                0x080002fc                DMA2_Stream2_Handler
-                0x080002fc                Debug_Monitor_Handler
-                0x080002fc                SPI3_Handler
-                0x080002fc                DMA2_Stream0_Handler
-                0x080002fc                RCC_Handler
-                0x080002fc                DMA1_Stream5_Handler
-                0x080002fc                EXTI16_PVD_Handler
-                0x080002fc                TIM5_Handler
-                0x080002fc                FPU_Handler
-                0x080002fc                BusFault_Handler
-                0x080002fc                SPI5_Handler
-                0x080002fc                DMA1_Stream4_Handler
-                0x080002fc                SPI4_Handler
+ .text          0x08000188      0x120 main.o
+                0x08000188                main
+                0x0800019a                configure_LED_pin
+                0x080001d4                configure_button_pin
+                0x0800021c                configure_button_interrupt
+                0x08000274                EXTI15_10_Handler
+ .text          0x080002a8       0x94 startup.o
+                0x080002a8                Reset_Handler
+                0x08000334                SVCall_Handler
+                0x08000334                DMA2_Stream7_Handler
+                0x08000334                Systick_Handler
+                0x08000334                HardFault_Handler
+                0x08000334                DMA2_Stream3_Handler
+                0x08000334                PendSv_Handler
+                0x08000334                NMI_Handler
+                0x08000334                ADC_Handler
+                0x08000334                EXTI17_RTC_Alarm_Handler
+                0x08000334                I2C1_EV_Handler
+                0x08000334                I2C3_ER_Handler
+                0x08000334                WWDG_Handler
+                0x08000334                EXTI4_Handler
+                0x08000334                I2C3_EV_Handler
+                0x08000334                DMA1_Stream1_Handler
+                0x08000334                DMA2_Stream4_Handler
+                0x08000334                DMA1_Stream7_Handler
+                0x08000334                OTG_FS_Handler
+                0x08000334                TIM1_BRK_TIM9_Handler
+                0x08000334                I2C1_ER_Handler
+                0x08000334                DMA1_Stream3_Handler
+                0x08000334                UsageFault_Handler
+                0x08000334                TIM1_UP_TIM10_Handler
+                0x08000334                TIM1_CC_Handler
+                0x08000334                I2C2_ER_Handler
+                0x08000334                USART6_Handler
+                0x08000334                DMA1_Stream0_Handler
+                0x08000334                EXTI22_RTC_WAKEUP_Handler
+                0x08000334                EXTI1_Handler
+                0x08000334                FLASH_Handler
+                0x08000334                EXTI3_Handler
+                0x08000334                EXTI2_Handler
+                0x08000334                EXTI9_5_Handler
+                0x08000334                TIM2_Handler
+                0x08000334                USART1_Handler
+                0x08000334                EXTI18_OTG_FS_WKUP_Handler
+                0x08000334                TIM3_Handler
+                0x08000334                DMA2_Stream6_Handler
+                0x08000334                Default_Handler
+                0x08000334                TIM1_TRG_COM_TIM11_Handler
+                0x08000334                EXTI21_TAMP_STAMP_Handler
+                0x08000334                TIM4_Handler
+                0x08000334                SPI2_Handler
+                0x08000334                DMA2_Stream1_Handler
+                0x08000334                DMA1_Stream2_Handler
+                0x08000334                MemManage_Handler
+                0x08000334                EXTI0_Handler
+                0x08000334                DMA2_Stream5_Handler
+                0x08000334                DMA1_Stream6_Handler
+                0x08000334                SDIO_Handler
+                0x08000334                USART2_Handler
+                0x08000334                SPI1_Handler
+                0x08000334                I2C2_EV_Handler
+                0x08000334                DMA2_Stream2_Handler
+                0x08000334                Debug_Monitor_Handler
+                0x08000334                SPI3_Handler
+                0x08000334                DMA2_Stream0_Handler
+                0x08000334                RCC_Handler
+                0x08000334                DMA1_Stream5_Handler
+                0x08000334                EXTI16_PVD_Handler
+                0x08000334                TIM5_Handler
+                0x08000334                FPU_Handler
+                0x08000334                BusFault_Handler
+                0x08000334                SPI5_Handler
+                0x08000334                DMA1_Stream4_Handler
+                0x08000334                SPI4_Handler
  *(.rodata)
-                0x08000304                        . = ALIGN (0x4)
-                0x08000304                        _etext = .
+                0x0800033c                        . = ALIGN (0x4)
+                0x0800033c                        _etext = .
 
-.glue_7         0x08000304        0x0
- .glue_7        0x08000304        0x0 linker stubs
+.glue_7         0x0800033c        0x0
+ .glue_7        0x0800033c        0x0 linker stubs
 
-.glue_7t        0x08000304        0x0
- .glue_7t       0x08000304        0x0 linker stubs
+.glue_7t        0x0800033c        0x0
+ .glue_7t       0x0800033c        0x0 linker stubs
 
-.vfp11_veneer   0x08000304        0x0
- .vfp11_veneer  0x08000304        0x0 linker stubs
+.vfp11_veneer   0x0800033c        0x0
+ .vfp11_veneer  0x0800033c        0x0 linker stubs
 
-.v4_bx          0x08000304        0x0
- .v4_bx         0x08000304        0x0 linker stubs
+.v4_bx          0x0800033c        0x0
+ .v4_bx         0x0800033c        0x0 linker stubs
 
-.iplt           0x08000304        0x0
- .iplt          0x08000304        0x0 main.o
+.iplt           0x0800033c        0x0
+ .iplt          0x0800033c        0x0 main.o
 
-.rel.dyn        0x08000304        0x0
- .rel.iplt      0x08000304        0x0 main.o
+.rel.dyn        0x0800033c        0x0
+ .rel.iplt      0x0800033c        0x0 main.o
 
-.data           0x20000000        0x0 load address 0x08000304
+.data           0x20000000        0x0 load address 0x0800033c
                 0x20000000                        _sdata = .
  *(.data)
  .data          0x20000000        0x0 main.o
@@ -134,10 +134,10 @@ END GROUP
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x08000304
+.igot.plt       0x20000000        0x0 load address 0x0800033c
  .igot.plt      0x20000000        0x0 main.o
 
-.bss            0x20000000        0x0 load address 0x08000304
+.bss            0x20000000        0x0 load address 0x0800033c
                 0x20000000                        _sbss = .
  *(.bss)
  .bss           0x20000000        0x0 main.o
@@ -147,13 +147,13 @@ END GROUP
 OUTPUT(proto_one.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000      0x205
- .debug_info    0x00000000       0x84 main.o
- .debug_info    0x00000084      0x181 startup.o
+.debug_info     0x00000000      0x244
+ .debug_info    0x00000000       0xc3 main.o
+ .debug_info    0x000000c3      0x181 startup.o
 
-.debug_abbrev   0x00000000      0x152
- .debug_abbrev  0x00000000       0x53 main.o
- .debug_abbrev  0x00000053       0xff startup.o
+.debug_abbrev   0x00000000      0x15d
+ .debug_abbrev  0x00000000       0x5e main.o
+ .debug_abbrev  0x0000005e       0xff startup.o
 
 .debug_aranges  0x00000000       0x40
  .debug_aranges
@@ -161,13 +161,13 @@ LOAD linker stubs
  .debug_aranges
                 0x00000020       0x20 startup.o
 
-.debug_line     0x00000000      0x1f6
- .debug_line    0x00000000       0xc2 main.o
- .debug_line    0x000000c2      0x134 startup.o
+.debug_line     0x00000000      0x1ee
+ .debug_line    0x00000000       0xba main.o
+ .debug_line    0x000000ba      0x134 startup.o
 
 .debug_str      0x00000000      0x1d4
  .debug_str     0x00000000      0x1d4 main.o
-                                 0xf4 (size before relaxing)
+                                0x178 (size before relaxing)
  .debug_str     0x000001d4        0x0 startup.o
                                 0x1b5 (size before relaxing)
 

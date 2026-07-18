@@ -1,6 +1,6 @@
 CC = arm-none-eabi-gcc 
 CFLAGS = -nostdlib -c -mcpu=cortex-m4 -mthumb -g
-LDFLAGS = -mcpu=cortex-m4 -mthumb --specs=nosys.specs  -nostartfiles -T RATSMORE_stm32f411re_linker.ld
+LDFLAGS = -mcpu=cortex-m4 -mthumb --specs=nosys.specs  -nostartfiles -T RATSMORE_stm32f411re_linker.ld -O0
 
 all : proto_one.elf
 

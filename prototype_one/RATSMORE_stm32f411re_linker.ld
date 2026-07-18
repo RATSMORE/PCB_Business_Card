@@ -16,6 +16,7 @@ SECTIONS defines where certain memory (text, bss, etc) is placed within the memo
 */
 SECTIONS /* How we split up the memory regions defined in the last snippet */
 {
+
     .text : 
     {
         *(.isr_vector)  /* Vector table handles all exceptions and interrupts, and starts with the stack pointer and reset handler*/
@@ -24,6 +25,7 @@ SECTIONS /* How we split up the memory regions defined in the last snippet */
         . = ALIGN(4); /* We should align our addresses to multiples of 4*/
         _etext = .; /* Store the value of the location counter into the end of text */
     } > FLASH
+
 
 
     /*
